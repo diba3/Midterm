@@ -1,0 +1,199 @@
+
+html{scroll-behavior: smooth;}
+*{padding: 0; margin: 0; box-sizing: border-box; }
+body{
+  background:#FB6F92; 
+  font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+header{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+header img{
+  width: 300px;
+  height: auto;
+  border-radius: 20%;
+}
+
+header h3{
+  color: white;
+  margin: 24px 0;
+  letter-spacing: 3.2px;
+  font-size: 24px;
+
+}
+
+header p{
+  color: white;
+
+}
+
+header h4{
+  color: white;
+  margin-top: 40px; 
+  font-size: 80px;
+}
+
+header a{
+  text-decoration: none;
+}
+
+.cont{
+  width: 100%;
+  min-height: 150vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.8fr 0.2fr;
+  gap: 16px;
+  grid-template-areas: "abt abt skills skills" "edu edu edu lang" "con exp exp exp" "footer footer footer footer";
+  padding: 32px;
+}
+
+.abt{
+  background: white;
+  color: black;
+  padding: 32px;
+  grid-area: abt;  
+}
+
+.skills{
+  background: #FF8FAB;
+  color: white;
+  padding: 32px;  
+  grid-area: skills;
+}
+
+.edu{
+  background: #FF8FAB;
+  color: white;
+  padding: 32px; 
+  grid-area: edu; 
+
+}
+
+.lang{
+  background: white;
+  color: #FB6F92;
+  padding: 32px;  
+  grid-area: lang;
+}
+
+.con{
+  background: white;
+  color: #FB6F92;
+  padding: 32px;  
+  grid-area: con;
+}
+
+.exp{
+  background: #FF8FAB;
+  color: white;
+  padding: 32px; 
+  grid-area: exp; 
+}
+
+footer{
+  color: white;
+  background: #FF8FAB;
+  padding: 32px; 
+  grid-area: footer; 
+}
+
+h2{
+  margin-bottom: 16px;
+}
+
+.abt p{
+  padding: 5px 16px;
+  text-align: justify;
+  line-height: 35px;
+}
+
+.skills div{
+  width: 100%;
+  padding: 8px 16px;
+}
+
+
+.skills div progress[value]{
+  width: 100%;
+  height: 16px;
+}
+
+.edu h2{
+  letter-spacing: 1.6px;
+}
+
+.edu p{
+  padding: 5px 16px;
+  text-align: justify;
+  line-height: 35px;
+}
+
+.edu a{
+  text-decoration: none;
+  padding: 8px 11px;
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+
+.lang ul{
+  margin: 16px 0;
+  padding: 5px 16px;
+  text-align: justify;
+  line-height: 35px;
+
+}
+
+.lang ul li a{
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.con div h3{
+  margin-right: 3px;
+  margin: 16px 0;
+  cursor: pointer;
+
+}
+
+.exp p{
+  padding: 5px 16px;
+  text-align: justify;
+  line-height: 35px;
+
+}
+
+footer{
+  text-align: center;
+}
+
+@media only screen and (max-width: 770px){
+  .cont{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.6fr 1fr 0.6fr 0.5fr 0.8fr 0.1fr;
+    grid-template-areas: "abt" "skills" "edu" "lang" "con" "exp" "footer";
+
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
